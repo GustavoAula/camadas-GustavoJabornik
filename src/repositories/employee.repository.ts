@@ -16,6 +16,15 @@ export class EmployeeRepository {
             .all(companyId) as Employee[]
     }
 
+    countByCompany(companyId: number): number {
+        const row = this.db
+            .prepare('SELECT COUNT(*) AS count FROM employees WHERE company_id = ?')
+            .get(companyId) as { count: number }
+
+        return row.count
+    }
+
+
     save(data: NewEmployee, netSalary: number): Employee {
         const result = this.db
             .prepare(`
