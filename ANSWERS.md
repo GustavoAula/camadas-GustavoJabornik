@@ -1,6 +1,6 @@
 # Respostas
 
-Nome:
+Nome: Gustavo Vinicius Jabornik
 
 Como responder: nas questões objetivas, escreva a letra depois de **Resposta:**. A justificativa é opcional, mas ajuda na correção. Nas discursivas, escreva seu texto logo abaixo do enunciado.
 
@@ -37,9 +37,9 @@ C) A asserção I é uma proposição verdadeira, e a II é uma proposição fal
 D) A asserção I é uma proposição falsa, e a II é uma proposição verdadeira.
 E) As asserções I e II são proposições falsas.
 
-**Resposta:**
+**Resposta:** A
 
-**Justificativa (opcional):**
+**Justificativa (opcional):** A afirmativa I é verdadeira porque o service é recebido pelo construtor. A afirmativa II também é verdadeira e explica a primeira, pois essa forma permite trocar a implementação.
 
 ---
 
@@ -66,9 +66,9 @@ C) `const company = db.prepare('SELECT * FROM companies WHERE id = ' + companyId
 D) `res.send(\`<h1>${name} created</h1>\`)`
 E) `const net = gross - gross * 0.11`
 
-**Resposta:**
+**Resposta:** E
 
-**Justificativa (opcional):**
+**Justificativa (opcional):** O cálculo é uma regra de negócio e deve ser realizado pelo Service.
 
 ---
 
@@ -94,9 +94,9 @@ C) II e IV, apenas.
 D) I, II e IV, apenas.
 E) I, II, III e IV.
 
-**Resposta:**
+**Resposta:** D
 
-**Justificativa (opcional):**
+**Justificativa (opcional):** A validação do formato do e-mail pertence ao DTO, a regra do salário mínimo pertence ao Service e o Repository so lida com o DB.
 
 ---
 
