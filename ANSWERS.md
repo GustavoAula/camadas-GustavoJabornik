@@ -128,9 +128,9 @@ C) II, apenas.
 D) II e III, apenas.
 E) I, II e III.
 
-**Resposta:**
+**Resposta:** B
 
-**Justificativa (opcional):**
+**Justificativa (opcional):** 
 
 ---
 
@@ -152,9 +152,9 @@ C) A asserção I é uma proposição verdadeira, e a II é uma proposição fal
 D) A asserção I é uma proposição falsa, e a II é uma proposição verdadeira.
 E) As asserções I e II são proposições falsas.
 
-**Resposta:**
+**Resposta:** C
 
-**Justificativa (opcional):**
+**Justificativa (opcional):** A afirmativa I é verdadeira porque a rota tem a requisição, regra de negócio, sql e a montagem da resposta. A afirmativa II é falsa, pois o TypeScript não impede erros de lógica nem garante que uma alteração não afete outras partes do sistema.
 
 ---
 
@@ -170,7 +170,7 @@ c) cite os arquivos do seu projeto que seriam alterados para atendê-lo.
 
 (Até 10 linhas.)
 
-**Resposta:**
+**Resposta:** O pedido que daria mais trabalho seria usar um INSS diferente para cada estado. Eu teria que mudar a regra no arquivo src/services/employee.service.ts, pois é nele que o INSS é calculado. O Service também precisaria consultar o estado da empresa. Depois, eu teria que testar os cálculos para verificar se cada estado está usando a porcentagem correta. O Controller não precisaria ser alterado.
 
 ---
 
@@ -186,4 +186,4 @@ c) descreva como você corrigiu, ou como corrigiria.
 
 (Até 10 linhas.)
 
-**Resposta:**
+**Resposta:** O erro que eu cometi mas depois consertei foi colocar responsabilidades demais nas rotas e nos Controllers. Por exemplo, eu poderia colocar neles regras de exclusão ou códigos de erro. A correção é deixar o Controller apenas chamar o Service e encaminhar os erros com next(error). As regras ficam nos Services e a transformação dos erros em respostas HTTP fica no arquivo src/middlewares/error.middleware.ts.
