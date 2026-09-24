@@ -16,3 +16,11 @@ npm run check       # confere estrutura e respostas da API (com o servidor ligad
 Precisa de Node 18 ou mais recente.
 
 Já vem pronto: `src/server.ts`, `src/errors/index.ts` e `src/types.ts`.
+
+## Status da atividade
+
+Revisão final concluída.
+
+- `npm run typecheck`: sem erros
+- `npm run check`: todos os testes aprovados
+- Banco recriado e API validada
